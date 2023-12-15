@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    container_name: pokemon
+    image: mongo:6.0
+    volumes:
+      - poke-data:/data/db
+    ports:
+      - 27017:27017
+
+volumes:
+  poke-data:
+    external: false
