@@ -23,7 +23,7 @@ services:
       - ME_CONFIG_MONGODB_ADMINPASSWORD= ${MONGO_PASSWORD}
       - ME_CONFIG_MONGODB_SERVER= ${MONGO_DB_NAME}
     ports:
-      - 8082:8081
+      - 8087:8081
     restart: always        
     
     
